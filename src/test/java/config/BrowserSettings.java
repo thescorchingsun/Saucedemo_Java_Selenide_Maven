@@ -15,14 +15,14 @@ public class BrowserSettings {
                 Configuration.baseUrl = "https://www.saucedemo.com/";
                 Configuration.browser = "chrome";
                 Configuration.browserSize = "1920x1080";
-                Configuration.headless = false; //true без запуска браузера
+                Configuration.headless = true; //true без запуска браузера
                 System.out.println("Название браузера: " + browser);
                 break;
             case ("firefox"):
                 Configuration.baseUrl = "https://www.saucedemo.com/";
                 Configuration.browser = "firefox";
                 Configuration.browserSize = "1920x1080";
-                Configuration.headless = false; //true без запуска браузера
+                Configuration.headless = true; //true без запуска браузера
                 System.out.println("Название браузера: " + browser);
                 break;
         }
