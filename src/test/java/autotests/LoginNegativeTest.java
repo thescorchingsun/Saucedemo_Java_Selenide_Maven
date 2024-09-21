@@ -20,7 +20,7 @@ public class LoginNegativeTest {
 
     LoginPage loginPage = new LoginPage();
 
-    @Test(description = "Авторизация с заблокированным пользователем")
+    @Test(description = "Авторизация с заблокированным пользователем", groups = "smoke")
     public void loginLockedOutUserTest() {
         loginPage.openLoginPage(URL_LOGIN)
                 .typeUsername(USERNAME_LOCKED_OUT)

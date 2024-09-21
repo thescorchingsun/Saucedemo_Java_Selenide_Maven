@@ -21,7 +21,7 @@ public class LoginPositiveTest extends BaseTest {
 
     LoginPage loginPage = new LoginPage();
 
-    @Test(description = "Авторизация со стандартным пользователем")
+    @Test(description = "Авторизация со стандартным пользователем", groups = "smoke")
     public void loginStandardUserTest() {
            loginPage.openLoginPage(URL_LOGIN)
                    .typeUsername(USERNAME_STANDARD)
@@ -29,6 +29,7 @@ public class LoginPositiveTest extends BaseTest {
                    .clickLoginButton();
         Selenide.webdriver().shouldHave(url(URL_CATALOG));
     }
+
 
 }
 
